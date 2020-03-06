@@ -1,0 +1,33 @@
+/**
+ * 样式变量文件
+ *
+ **/
+
+:root {
+    --error-color: #f00;
+
+    --primary-color: #4D8DD9;
+    --tab-border-color: #4D8DD9;
+    --tab-hover-color: #4D8DD9;
+    --modal-border-color: #4D8DD9;
+    --link-color: #4D8DD9;
+    --tag-hover-color: #4D8DD9;
+
+    --link-color-hover: #6b92d1;
+    --link-color-visited: #385f9e;
+    --second-title-text-color: #bbb;
+    --item-background-color: #EDF3FB;
+    --heavy-text-color: #80848F;
+
+    --green-text: #22B07B;
+    --grey-text: #999;
+    --border-color: #ddd;
+    --forbidden-text-color: #ddd;
+    --button-border-color: #ddd;
+    --border-second-color: #eee;
+
+    --title-text-color: #495060;
+    --min-width: 1280px;
+    --header-height: 60px;
+    --left-nav-width: 200px;
+}

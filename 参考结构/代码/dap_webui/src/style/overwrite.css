@@ -1,0 +1,44 @@
+/* 复写组件库或者第三方组件样式文件 */
+
+.sfv-form-item {
+    margin-bottom: 16px;
+}
+.sfv-form-item:last-child {
+    margin-bottom: 0px;
+}
+.sfv-fieldlabel {
+    color: #80848F;
+    line-height: 32px;
+}
+.sfv-radio {
+    line-height: 32px;
+}
+
+.sfv-tabpanel {
+    box-shadow: none;
+}
+
+/* 网络部署和用户状态和跨页选择头部 第一列 视觉上面需要向右边 */
+.sfv-table-cell {
+    padding-left: 18px;
+}
+
+/* 网络部署和用户状态内容 第一列 视觉上面需要向右边 */
+.sfv-table-cell__content {
+    padding-left: 12px;
+}
+
+/* 用户管理模块， 批量编辑复选框的跟文本框对齐问题 */
+.sfv-checkbox__top {
+    top: -32px;
+}
+
+/* 有表头最后一个需要向下距离为40px */
+.sfv-form-item-last:last-child {
+    margin-bottom: 40px;
+}
+
+/* 覆盖组件样式 失去焦点后去除边框 */
+.sfv-toolbar_inner .sfv-btn:focus {
+    border-color: transparent;
+}

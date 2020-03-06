@@ -1,0 +1,6 @@
+body {
+    height: 100vh;
+}
+.sdp-login-logo {
+    background-image: url('../assets/logo-colours.png');
+}

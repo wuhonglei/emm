@@ -1,0 +1,83 @@
+@import "src/common/assets/css/var.css";
+.query {
+    line-height: 1.15em;
+    padding: 20px 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    & .query__title {
+        font-size: 13px;
+        padding-left: 10px;
+        position: relative;
+        &.bt {
+            margin-top: 32px;
+        }
+        &::before {
+            content: '';
+            height: 100%;
+            width: 4px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: var(--primary-color);
+        }
+    }
+
+    & .query__content {
+        padding: 16px 10px 0 10px;
+        font-size: 12px;
+    }
+
+    & .form {
+        line-height: 36px !important;
+        margin-bottom: 14px;
+        overflow: hidden;
+    }
+    & .el-icon-information {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    & .form__label {
+        float: left;
+        width: 100px;
+
+        &::after {
+            content: '：';
+        }
+        &.is-no-label {
+            &::after {
+                content: ' ';
+            }
+        }
+    }
+    & .form__content {
+        float: left;
+        width: 394px;
+        & > .el-select {
+            width: 100%;
+        }
+    }
+    & .form__split {
+        display: inline-block;
+        width: 8px;
+    }
+    & .query__more {
+        display: inline-block;
+        font-size: 12px;
+        padding-left: 10px;
+        color: #209797;
+        padding-bottom: 24px;
+        cursor: pointer;
+    }
+    & .query__button {
+        padding-left: 10px;
+    }
+    & .el-form-item {
+        margin-bottom: 0;
+    }
+
+    & .child-group {
+        padding-left: 10px;
+        color: #209797;
+    }
+}

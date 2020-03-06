@@ -1,0 +1,29 @@
+.tabs-wrapper {
+
+    height: 47px;
+    border-bottom: 2px solid var(--border-color);
+
+    & .nav__item {
+        font-size: 14px;
+        padding: 0px 16px;
+        line-height: 47px;
+        padding-left: 10px;
+        margin-left: 8px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+        &.is-active {
+            line-height: 46px;
+            border-bottom: 2px solid var(--tab-border-color);
+            color: var(--primary-color);
+        }
+        &.is-disabled {
+            cursor: not-allowed;
+            color: #ccc;
+            border-bottom-color: #ccc;
+        }
+    }
+}

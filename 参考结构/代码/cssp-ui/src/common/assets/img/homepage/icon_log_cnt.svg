@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>日志总数-iocn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F3FFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="P6日志审计中心" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="P6日志审计中心-1920适配04" transform="translate(-435.000000, -134.000000)" fill="url(#linearGradient-1)">
+            <g id="编组-5" transform="translate(415.000000, 116.000000)">
+                <g id="日志总数">
+                    <g id="日志总数-iocn">
+                        <path d="M38,18 C39.1045695,18 40,18.8954305 40,20 L40,40 C40,41.1045695 39.1045695,42 38,42 L22,42 C20.8954305,42 20,41.1045695 20,40 L20,20 C20,18.8954305 20.8954305,18 22,18 L38,18 Z M29,34 L25,34 C24.4477153,34 24,34.4477153 24,35 C24,35.5522847 24.4477153,36 25,36 L25,36 L29,36 C29.5522847,36 30,35.5522847 30,35 C30,34.4477153 29.5522847,34 29,34 L29,34 Z M35,29 L25,29 C24.4477153,29 24,29.4477153 24,30 C24,30.5522847 24.4477153,31 25,31 L25,31 L35,31 C35.5522847,31 36,30.5522847 36,30 C36,29.4477153 35.5522847,29 35,29 L35,29 Z M31,24 L25,24 C24.4477153,24 24,24.4477153 24,25 C24,25.5522847 24.4477153,26 25,26 L25,26 L31,26 C31.5522847,26 32,25.5522847 32,25 C32,24.4477153 31.5522847,24 31,24 L31,24 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

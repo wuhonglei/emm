@@ -1,0 +1,17 @@
+stages:
+    - js-codescan
+
+js代码扫描:
+    before_script:
+        - echo "current working dir： ${CI_PROJECT_DIR}"
+    stage: js-codescan
+    tags: 
+        - cloudsec-docker-runner 
+    image: 
+    variables:
+        CSPath: packages
+        CODESCAN_TOKEN: 4eca1aac03839d1e43d9826db2f3aa15  #每新建一个仓库，都需要新建一个代码扫描TOKEN，来替换该值 参考文档：http://docs.sangfor.org/pages/viewpage.action?pageId=18384350
+    script:
+        - cp -f .gitlab/ci/job_js_codescan.sh .
+        - bash -x job_js_codescan.sh  #这里改成调用脚本
+

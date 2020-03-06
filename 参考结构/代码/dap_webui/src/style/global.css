@@ -1,0 +1,390 @@
+/* 清空公共样式 */
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #333;
+    font-family: 'Microsoft YaHei','Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB',SimSun,sans-serif;
+    background-color: #eee;
+    font-size: 12px;
+}
+body {
+    min-width: var(--min-width);
+    overflow-y: hidden;
+}
+div, p, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0 auto;
+    padding: 0px;
+}
+ul {
+    padding-inline-start: 0px; 
+}
+li {
+    list-style: none;
+}
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+/* 元素类型 */
+.inline-block {
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+
+/* 文本对齐 */
+.text-center {
+    text-align: center;
+}
+.vertical-middle {
+    vertical-align: middle;
+}
+
+/* 文本溢出 */
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 手表指针 */
+.pointer {
+    cursor: pointer;
+}
+
+/* 浮动 */
+.clear {
+    clear: both;
+}
+
+/* 内边距 */
+.pt8 {
+    padding-top: 8px;
+}
+.pl8 {
+    padding-left: 8px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.pl14 {
+    padding-left: 14px;
+}
+.pl18 {
+    padding-left: 18px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pr8 {
+    padding-right: 8px;
+}
+.pr32 {
+    padding-right: 32px;
+}
+
+/* 外边距 */
+.ml8 {
+    margin-left: 8px;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.ml24 {
+    margin-left: 24px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mr24 {
+    margin-right: 24px;
+}
+.mr48 {
+    margin-right: 48px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.margin1 {
+    margin: 1px;
+}
+
+/* 元素继承 */
+.rel {
+    position: relative;
+}
+
+/* iconfont */
+.icon-bar-compatible {
+    font-size: 16px;
+}
+.icon-choose::before {
+    content: "\e896";
+}
+.icon-right-arrow::before {
+    content: "\e896";
+}
+
+/* 图标兼容 */
+.filed-compatible {
+    position: relative;
+    top: 2px;
+}
+
+/* 对组件元素指针补充交互 */
+.ele-hover-pointer :hover {
+    cursor: pointer;
+}
+
+/* 宽高设置 */
+.w-100 {
+    width: 100%;
+    min-width: 1200px;
+}
+.h-100 {
+    height: 100%;
+}
+
+/* 常用颜色 */
+.red {
+    color: var(--error-color);
+}
+.green {
+    color: var(--green-text);
+}
+.gray {
+    color:#80848F;
+}
+
+/* 常用业务模块布局元素 -  */
+.content-box {
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+.left-list {
+    width: 180px;
+}
+.left-toolbar {
+    width: 220px;
+}
+.right-content {
+    width: calc(100% - 220px);
+    flex: 1;
+}
+.left-toolbar__head {
+    line-height: 39px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.left-toolbar__head-title {
+    padding-left: 16px;
+    font-size: 14px;
+    color: #333;
+}
+.form-table {
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    width: 300px;
+    display: inline-block;
+}
+
+.sfv-toolbar {
+    & .svg-icon{
+        font-size: 18px;
+    }
+}
+
+/* 浮动（遵循组件规范的） */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+/* 表单行 */
+.sf-form-line {
+    line-height: 31px;
+}
+
+/* 表单输入框 */
+.form-input-box {
+    width: 300px;
+}
+
+/* 表单底部保存/取消按钮区域 */
+.form-submit-line {
+    height: 51px;
+    padding-top: 19px;
+    border-top: 1px solid #ddd;
+    padding-left: 40px;
+}
+
+/* 表单头部的提示文字样式 */
+.form-hints {
+    line-height: 36px;
+    color: #A6660A;
+    background: #FDFAF3;
+    border-bottom: 1px solid #F2DFC3;
+}
+
+/* 表单标题 */
+.form-title {
+    font-size: 14px;
+    line-height: 14px;
+    border-left: 3px solid var(--tab-border-color);
+    padding-left: 8px;
+    color: var(--title-text-color);
+}
+
+/* 表单子标题 */
+.sub-title {
+    font-size: 12px;
+    color: #80848F;
+}
+
+/* 弹窗标题的提示文字 */
+.modal-warn-tips {
+    margin: 8px 8px 0px 8px;
+    background: #FDF3E4;
+    border-radius: 4px;
+}
+.modal-warn-tips__content {
+    font-size: 12px;
+    color: #EE8800;
+    line-height: 32px;
+    padding-left: 28px;
+}
+.full-line {
+    border-top: 1px solid var(--border-color);
+}
+.arrow-item {
+    background: #f9f9f9;
+    border: 1px solid var(--border-second-color);
+    border-radius: 2px;
+    position: relative;
+    padding: 10px 16px;
+    line-height: 28px;
+}
+.arrow-item .arrow-item__icon {
+    display:block;
+    width:0;
+    height:0;
+    border-width:0 10px 8px;
+    border-style:solid;
+    border-color:transparent transparent #f9f9f9;/*透明 透明  黄*/
+    position:absolute;
+    top:-8px;
+    left:0;
+}
+
+/* 弹出菜单 */
+.correlation-nav-item {
+    line-height: 32px;
+    padding: 0 8px;
+    min-width: 80px;
+    cursor: pointer;
+}
+.correlation-nav-item:hover {
+    background: var(--item-background-color);
+}
+
+/* 表格列表内的图标 */
+.table-iconfont {
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 14px;
+}
+.textfiled:hover {
+    cursor: pointer;
+}
+
+/* 按钮侧边线条 */
+.btn-border {
+    padding: 0px 3px;
+    color: var(--button-border-color);
+}
+
+/* 业务模块-工具栏 */
+.toolbar-checkbox {
+    margin-right: 12px;
+    line-height:28px;
+}
+
+/* 列表内的提示 */
+.list-table__tips {
+    height: 40px;
+    width: 100%;
+    background: #FDFAF3;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 已选列表 */
+.selected-list {
+    position: absolute;
+    width: 638px;
+    height: calc(100% - 2px);
+    z-index: 10;
+    right: 0px;
+    top: 0px;
+    background: #fff;
+    border: 1px solid var(--modal-border-color);
+}
+.list-table__select {
+    color: #A6660A;
+}
+.list-table__line {
+    padding: 16px 16px 13px 24px;
+    color: #DDDDDD;
+}
+.add-name__count {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-top: 9px;
+    padding-left: 24px;
+    font-size: 12px;
+    color: #4677C6;
+}
+
+/* 动画 */
+.trans3 {
+    transition: all .5s;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes wave {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

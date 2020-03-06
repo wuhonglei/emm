@@ -1,0 +1,103 @@
+.log-manage__form {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+.log-manage__row {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.log-manage__item {
+    display: inline-block;
+    margin-left: 40px;
+}
+.log-manage__query {
+    margin: 8px 32px;
+}
+.log-manage__btn {
+    border-top: 1px solid #ddd;
+    text-align: right;
+    padding: 10px;
+}
+.log-manage__top {
+    height: 24px;
+    text-align: right;
+    line-height: 25px;
+}
+.log-manage__export {
+    margin: 0;
+    background-color: #9999;
+    width: 350px;
+    height: 20px;
+}
+.log-manage__table {
+    border-top: 1px solid #ddd;
+    height: calc(100% - 178px);
+    overflow: hidden;
+}
+.log-manage__table--trigger {
+    height: calc(100% - 43px);
+}
+.log-manage__icon {
+    padding-right: 12px;
+    position: relative;
+    top: 1px;
+}
+.log-manage__collapse {
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    display: flex;
+}
+.log-manage__collapse--content {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.log-manage__collapse--iconfont {
+    width: 60px;
+    margin-left: 15px;
+}
+
+.log-manage__query--result {
+    padding-left: 16px;
+    color: #80848F;
+}
+.log-manage__split {
+    color: #ddd;
+    padding: 0px 8px;
+}
+.log-manage__trigger {
+    cursor: pointer;
+    color: #4677C6;
+}
+.log-manage__info {
+    color: #4D8DD9;
+}
+.log-manage__error {
+    color: #E55;
+}
+.log-manage__warn {
+    color: #F90;
+}
+/**
+* 隐藏前往多少页
+*/
+.log-manage__table .sfv-page-jump__wrapper {
+    display: none !important;
+}
+.see-details__item {
+    margin-top: 35px;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+.see-details__label {
+    width: 75px;
+    display: inline-block;
+    font-size: 14px;
+}
+.see-details__content {
+    width: 370px;
+    margin: 0px;
+    float: right;
+}

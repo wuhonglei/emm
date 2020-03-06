@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代码统计（单位：行）</title>
+    <script src="./highcharts.src.js"></script>
+    <script src="./common_result.js"></script>
+    <style>
+        .column-content {
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+            vertical-align: top;
+            margin: 30px;
+            border: 1px solid #ccc;
+        }
+
+        .pie-content {
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+            margin: 30px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <div id="columnChart" class="column-content"></div>
+    <div id="pieChart" class="pie-content"></div>
+</body>
+<script>
+    var counterMap = window.counterMap;
+    var publicCodeNum = counterMap.publicCodeNum;
+    var businessCodeNum = counterMap.businessCodeNum;
+    var totalCodeNum = publicCodeNum + businessCodeNum;
+
+    createColumnChart({
+        el: window.columnChart,
+        title: '统计目录：' + window.counterPath,
+        categories: ['公共代码', '业务代码', '项目代码'],
+        seriesData: [publicCodeNum, businessCodeNum, totalCodeNum]
+    });
+
+    createPieChart({
+        el: window.pieChart,
+        title: '统计目录：' + window.counterPath,
+        seriesData: [{
+            name: '公共代码',
+            y: publicCodeNum
+        }, {
+            name: '业务代码',
+            y: businessCodeNum
+        }]
+    });
+
+    function createColumnChart (options) {
+        var title = options.title;
+        var categories = options.categories;
+        var seriesData = options.seriesData;
+
+        new Highcharts.Chart(options.el, {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: title
+            },
+            xAxis: {
+                categories: categories
+            },
+            yAxis: {
+                min: 0,
+                lineWidth: 1,
+                title: {
+                    text: ''
+                }
+            },
+            plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        crop: false,
+                        overflow: 'none'
+                    }
+                }
+            },
+            series: [{
+                name: '代码统计（单位：行）',
+                pointWidth: 40,
+                data: seriesData
+            }]
+        });
+    }
+
+    function createPieChart (options) {
+        new Highcharts.Chart(options.el, {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: options.title
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        formatter () {
+                            let percent = Math.round(this.y / totalCodeNum * 100);
+                            return '<b>' + this.point.name + ':</b> ' + percent + '%';
+                        }
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: '代码统计',
+                data: options.seriesData
+            }]
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+:root {
+    --panel-padding: 16px;
+    --primary-color: #17c1c5;
+    --content-bg-color: #f2f5f7;
+    --toolbar-bg-color: #EAEFF5;
+    --toolbar-border-color: #D3DAE2;
+    --panel-bg-color: #FFFFFF;
+    --disable-color: #333333;
+    --disable-opacity: 0.3;
+    --basic-font-color: #223d65;
+
+    --level-high-color: #FF5760;
+    --level-middle-color: #FFB14D;
+    --level-low-color:  #00C97F;
+
+    --nav-bg: #2F3339; /* 导航背景 */
+    --nav-hover-bg: #e7f8f9;
+}

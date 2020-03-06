@@ -1,0 +1,27 @@
+.table-search-wrapper {
+    position: relative;
+    height: 100%;
+    & .search-content {
+        float: right;
+        text-align: right;
+        & .search-content-item {
+            display: inline-block;
+            width: 210px;
+            margin: 0 8px;
+        }
+        & .search-more-btn {
+            padding: 7px 12px;
+            height: 30px;
+        }
+    }
+    
+    & .table {
+        position: absolute;
+        top: 44px;
+        display: flex;
+        height: calc(100% - 92px);
+        width: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+    }
+}

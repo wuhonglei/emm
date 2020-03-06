@@ -1,0 +1,57 @@
+{
+  "name": "sdp-ui2",
+  "version": "0.1.0",
+  "private": true,
+  "uedc": {
+    "product": "SSL",
+    "project": "SDP",
+    "version": "1.0.0"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --report && counter -p ./src",
+    "lint": "vue-cli-service lint",
+    "lint-all-format-json": "eslint  --color --ext .vue,.js --format json src >> _ui_checklist_result.json",
+    "lint-format-json": "eslint  --color --ext .vue,.js --format json {{files}} >> _ui_checklist_result.json",
+    "mock": "ms2 start -w"
+  },
+  "dependencies": {
+    "@sxf/jquery": "^1.0.4",
+    "@sxf/sf-vue-component": "^2.4.6",
+    "@uedc/login": "^0.4.32",
+    "@uedc/validations": "~2.0.6",
+    "axios": "~0.18.0",
+    "core-js": "~2.6.5",
+    "crypto-js": "~3.1.9-1",
+    "dayjs": "~1.8.14",
+    "echarts": "^4.4.0",
+    "highcharts": "^7.1.1",
+    "js-md5": "^0.7.3",
+    "lodash": "^4.17.15",
+    "lottie-web": "^5.5.7",
+    "normalize.css": "~8.0.1",
+    "pineapple": "^0.2.0",
+    "postcss-var": "^1.1.2",
+    "throttle-debounce": "^2.1.0",
+    "vue": "~2.5.10",
+    "vue-i18n": "^8.15.0",
+    "vue-router": "^3.0.1",
+    "vuex": "~3.0.1",
+    "vuex-persist": "~2.0.0"
+  },
+  "devDependencies": {
+    "@sxf/eslint-plugin-sfchecklist": "~3.1.3",
+    "@sxf/ms2": "~0.3.0",
+    "@sxf/pineapple": "^0.9.7",
+    "@vue/cli-plugin-babel": "~3.7.0",
+    "@vue/cli-plugin-eslint": "~3.7.0",
+    "@vue/cli-service": "~3.7.0",
+    "babel-eslint": "~10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "~5.16.0",
+    "mockjs": "^1.0.1-beta3",
+    "postcss-preset-env": "^6.7.0",
+    "svg-sprite-loader": "~4.1.6",
+    "vue-template-compiler": "~2.5.21"
+  }
+}
