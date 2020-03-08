@@ -7,7 +7,7 @@ import UedcLogin from '@uedc/login';
 import '@uedc/login/dist/theme/security.css';
 import 'normalize.css';
 import './login.css';
-import { login, getToken } from 'src/api/login';
+import { login, getToken } from 'src/api/login'; 
 import { getCurrentUser } from 'src/api/base';
 import utils from 'src/utils/utils_data';
 import { initInterface } from 'src/utils/module_init';
@@ -23,7 +23,7 @@ function getTokenInfo () {
         let data = res.data.data,
             csrfToken = lodashGet(data, 'csrfToken', '');
         localStorage.setItem('token', csrfToken);
-    }).catch();
+    }).catch(); 
 
     // 10分钟重新获取一次token
     setTimeout(() => {
@@ -83,7 +83,7 @@ UedcLogin.init(document.body, {
     },
     accountLogin: {
         enable: true,
-        text: _('账号登录'),
+        text: _('账号登录'), 
         items: [
             {
                 name: 'username',
@@ -112,6 +112,6 @@ UedcLogin.init(document.body, {
         } catch (error) {
             throw error.data.msg;
         }
-
+        
     }
 });
